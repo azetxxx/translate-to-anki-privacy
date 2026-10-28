@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Translate to Anki – Datenschutz</title>
+  <title>Translate to Anki – Privacy Policy</title>
   <!-- Standalone page (no extension APIs) so it can also be hosted publicly for the Chrome Web Store listing. -->
   <style>
     :root { --bg: #fff; --fg: #1f1f1f; --muted: #5f6368; --line: #dadce0; --accent: #1a73e8; --soft: #f1f3f4; }
@@ -21,57 +21,9 @@
 </head>
 <body>
 <main>
-  <h1>Translate to Anki – Datenschutzerklärung</h1>
-  <p class="meta">Stand: 28. Oktober 2026 · gilt ab Version 0.3.0</p>
-  <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
-
-  <section id="de" lang="de">
-    <h2>Kurzfassung</h2>
-    <p>Translate to Anki ist eine unabhängige Erweiterung und nicht mit Google oder Anki verbunden. Sie verarbeitet Texte ausschließlich auf deinem Computer. Sie sendet keine Daten an den Entwickler oder an Dritte, enthält keine Analyse- oder Tracking-Funktionen und zeigt keine Werbung.</p>
-
-    <h2>Zweck</h2>
-    <p>Die Erweiterung hat einen einzigen Zweck: Übersetzungen, die du auf Google Translate siehst, als Karteikarte in deiner lokalen Anki-App zu speichern.</p>
-
-    <h2>Welche Daten verarbeitet werden</h2>
-    <table>
-      <tr><th>Daten</th><th>Wozu</th><th>Wohin</th></tr>
-      <tr><td>Ausgangstext, Übersetzung und Sprachpaar auf der Google-Translate-Seite</td><td>Kartenvorschau anzeigen</td><td>Bleibt im Browser-Tab; wird nicht gespeichert</td></tr>
-      <tr><td>Inhalt der Kartenvorschau (Vorder-/Rückseite, Stapel, Tags)</td><td>Duplikate prüfen (automatisch beim Anzeigen der Vorschau, nachdem du den Datenschutz-Hinweis beim ersten Start bestätigt hast) und Karte speichern (nur beim Klick auf „Speichern“)</td><td>Nur an die Anki-App auf deinem Computer (AnkiConnect, <code>127.0.0.1:8765</code>)</td></tr>
-      <tr><td>Namen deiner Anki-Stapel und Notiztypen</td><td>Stapelauswahl anbieten</td><td>Werden von der lokalen Anki-App gelesen, nicht gespeichert</td></tr>
-      <tr><td>Einstellungen: gewählter Stapel und „Tauschen“ pro Sprachpaar, zuletzt gewählter Stapel, Panel ein-/ausgeklappt, zuletzt gelesene Version, Datenschutz-Hinweis bestätigt</td><td>Deine Auswahl merken</td><td>Chrome-Einstellungsspeicher (<code>chrome.storage.sync</code>). Ist die Chrome-Synchronisierung aktiv, überträgt Chrome diese Einstellungen über dein Google-Konto auf deine anderen Geräte. Das sind nur Stapelnamen und Schalter – keine übersetzten Texte.</td></tr>
-    </table>
-    <p>Die Erweiterung liest Ausgangstext und Übersetzung laufend, solange du Google Translate nutzt, damit die Vorschau aktuell ist. Übersetzte Texte werden von der Erweiterung nirgends dauerhaft gespeichert – außer in Anki, wenn du eine Karte speicherst.</p>
-
-    <h2>Was nicht passiert</h2>
-    <ul>
-      <li>Keine Übertragung an Server des Entwicklers oder an Dritte (abgesehen von der oben beschriebenen Chrome-Synchronisierung der Einstellungen durch Google, wenn du sie nutzt).</li>
-      <li>Keine eigenen Anfragen an Google Translate oder andere Übersetzungsdienste.</li>
-      <li>Kein Zugriff auf andere Websites als Google Translate.</li>
-      <li>Keine Analyse, kein Tracking, keine Werbung, kein Verkauf von Daten.</li>
-    </ul>
-
-    <h2>Berechtigungen</h2>
-    <ul>
-      <li><strong>Zugriff auf translate.google.com / translate.google.de:</strong> um das Panel anzuzeigen und Text und Übersetzung zu lesen.</li>
-      <li><strong>Zugriff auf <code>http://127.0.0.1:8765</code>:</strong> um mit der Anki-App auf deinem Computer zu sprechen.</li>
-      <li><strong>storage:</strong> um deine Einstellungen zu speichern und zu synchronisieren.</li>
-    </ul>
-
-    <h2>Hinweis zu Google Translate und Anki</h2>
-    <p>Was du in Google Translate eingibst, verarbeitet Google nach seiner eigenen <a href="https://policies.google.com/privacy?hl=de">Datenschutzerklärung</a> – unabhängig von dieser Erweiterung. Karten in Anki werden nur dann zu AnkiWeb übertragen, wenn du in Anki selbst synchronisierst.</p>
-
-    <h2>Löschen</h2>
-    <p>Beim Entfernen der Erweiterung löscht Chrome ihre gespeicherten Einstellungen. Gespeicherte Karten verwaltest und löschst du in Anki.</p>
-
-    <h2>Änderungen und Kontakt</h2>
-    <p>Ändert sich die Datenverarbeitung, wird diese Seite aktualisiert und die Änderung unter „Was ist neu“ genannt. Kontakt: <a href="mailto:translate-anki@az-studio.pro">translate-anki@az-studio.pro</a></p>
-  </section>
-
-  <hr>
-
   <section id="en" lang="en">
     <h1>Translate to Anki – Privacy Policy</h1>
-    <p class="meta">Last updated: October 28, 2026 · applies from version 0.3.0</p>
+    <p class="meta">Last updated: October 28, 2026 · applies from version 0.4.0</p>
 
     <h2>Summary</h2>
     <p>Translate to Anki is an independent extension, not affiliated with Google or Anki. It processes text only on your computer. It sends no data to the developer or any third party, contains no analytics or tracking, and shows no ads.</p>
@@ -83,7 +35,7 @@
     <table>
       <tr><th>Data</th><th>Why</th><th>Where it goes</th></tr>
       <tr><td>Source text, translation and language pair on the Google Translate page</td><td>Show the card preview</td><td>Stays in the browser tab; not stored</td></tr>
-      <tr><td>Card preview content (front, back, deck, tags)</td><td>Check for duplicates (automatically when the preview is shown, after you have confirmed the privacy notice on first use) and save the card (only when you click “Speichern”)</td><td>Only to the Anki app on your computer (AnkiConnect, <code>127.0.0.1:8765</code>)</td></tr>
+      <tr><td>Card preview content (front, back, deck, tags)</td><td>Check for duplicates (automatically when the preview is shown, after you have confirmed the privacy notice on first use) and save the card (only when you click “Save”)</td><td>Only to the Anki app on your computer (AnkiConnect, <code>127.0.0.1:8765</code>)</td></tr>
       <tr><td>Names of your Anki decks and note types</td><td>Offer the deck selector</td><td>Read from the local Anki app, not stored</td></tr>
       <tr><td>Settings: chosen deck and “swap” per language pair, last chosen deck, panel collapsed state, last read version, privacy notice confirmed</td><td>Remember your choices</td><td>Chrome settings storage (<code>chrome.storage.sync</code>). If Chrome sync is on, Chrome transfers these settings to your other devices via your Google account. They are only deck names and toggles – no translated text.</td></tr>
     </table>
@@ -111,7 +63,7 @@
     <p>Removing the extension makes Chrome delete its stored settings. You manage and delete saved cards in Anki.</p>
 
     <h2>Changes and contact</h2>
-    <p>If data processing changes, this page is updated and the change is listed under “Was ist neu”. Contact: <a href="mailto:translate-anki@az-studio.pro">translate-anki@az-studio.pro</a></p>
+    <p>If data processing changes, this page is updated and the change is listed under “What's new”. Contact: <a href="mailto:translate-anki@az-studio.pro">translate-anki@az-studio.pro</a></p>
   </section>
 </main>
 </body>
