@@ -22,7 +22,7 @@
 <body>
 <main>
   <h1>Translate to Anki – Datenschutzerklärung</h1>
-  <p class="meta">Stand: 28. Oktober 2026 · gilt ab Version 0.2.3</p>
+  <p class="meta">Stand: 28. Oktober 2026 · gilt ab Version 0.3.0</p>
   <nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
 
   <section id="de" lang="de">
@@ -38,13 +38,13 @@
       <tr><td>Ausgangstext, Übersetzung und Sprachpaar auf der Google-Translate-Seite</td><td>Kartenvorschau anzeigen</td><td>Bleibt im Browser-Tab; wird nicht gespeichert</td></tr>
       <tr><td>Inhalt der Kartenvorschau (Vorder-/Rückseite, Stapel, Tags)</td><td>Duplikate prüfen (automatisch beim Anzeigen der Vorschau, nachdem du den Datenschutz-Hinweis beim ersten Start bestätigt hast) und Karte speichern (nur beim Klick auf „Speichern“)</td><td>Nur an die Anki-App auf deinem Computer (AnkiConnect, <code>127.0.0.1:8765</code>)</td></tr>
       <tr><td>Namen deiner Anki-Stapel und Notiztypen</td><td>Stapelauswahl anbieten</td><td>Werden von der lokalen Anki-App gelesen, nicht gespeichert</td></tr>
-      <tr><td>Einstellungen: gewählter Stapel und „Tauschen“ pro Sprachpaar, zuletzt gewählter Stapel, Panel ein-/ausgeklappt, zuletzt gelesene Version, Datenschutz-Hinweis bestätigt</td><td>Deine Auswahl merken</td><td>Lokaler Speicher des Browsers (<code>chrome.storage.local</code>)</td></tr>
+      <tr><td>Einstellungen: gewählter Stapel und „Tauschen“ pro Sprachpaar, zuletzt gewählter Stapel, Panel ein-/ausgeklappt, zuletzt gelesene Version, Datenschutz-Hinweis bestätigt</td><td>Deine Auswahl merken</td><td>Chrome-Einstellungsspeicher (<code>chrome.storage.sync</code>). Ist die Chrome-Synchronisierung aktiv, überträgt Chrome diese Einstellungen über dein Google-Konto auf deine anderen Geräte. Das sind nur Stapelnamen und Schalter – keine übersetzten Texte.</td></tr>
     </table>
     <p>Die Erweiterung liest Ausgangstext und Übersetzung laufend, solange du Google Translate nutzt, damit die Vorschau aktuell ist. Übersetzte Texte werden von der Erweiterung nirgends dauerhaft gespeichert – außer in Anki, wenn du eine Karte speicherst.</p>
 
     <h2>Was nicht passiert</h2>
     <ul>
-      <li>Keine Übertragung an Server des Entwicklers oder an Dritte.</li>
+      <li>Keine Übertragung an Server des Entwicklers oder an Dritte (abgesehen von der oben beschriebenen Chrome-Synchronisierung der Einstellungen durch Google, wenn du sie nutzt).</li>
       <li>Keine eigenen Anfragen an Google Translate oder andere Übersetzungsdienste.</li>
       <li>Kein Zugriff auf andere Websites als Google Translate.</li>
       <li>Keine Analyse, kein Tracking, keine Werbung, kein Verkauf von Daten.</li>
@@ -54,7 +54,7 @@
     <ul>
       <li><strong>Zugriff auf translate.google.com / translate.google.de:</strong> um das Panel anzuzeigen und Text und Übersetzung zu lesen.</li>
       <li><strong>Zugriff auf <code>http://127.0.0.1:8765</code>:</strong> um mit der Anki-App auf deinem Computer zu sprechen.</li>
-      <li><strong>storage:</strong> um deine Einstellungen zu speichern.</li>
+      <li><strong>storage:</strong> um deine Einstellungen zu speichern und zu synchronisieren.</li>
     </ul>
 
     <h2>Hinweis zu Google Translate und Anki</h2>
@@ -71,7 +71,7 @@
 
   <section id="en" lang="en">
     <h1>Translate to Anki – Privacy Policy</h1>
-    <p class="meta">Last updated: October 28, 2026 · applies from version 0.2.3</p>
+    <p class="meta">Last updated: October 28, 2026 · applies from version 0.3.0</p>
 
     <h2>Summary</h2>
     <p>Translate to Anki is an independent extension, not affiliated with Google or Anki. It processes text only on your computer. It sends no data to the developer or any third party, contains no analytics or tracking, and shows no ads.</p>
@@ -85,13 +85,13 @@
       <tr><td>Source text, translation and language pair on the Google Translate page</td><td>Show the card preview</td><td>Stays in the browser tab; not stored</td></tr>
       <tr><td>Card preview content (front, back, deck, tags)</td><td>Check for duplicates (automatically when the preview is shown, after you have confirmed the privacy notice on first use) and save the card (only when you click “Speichern”)</td><td>Only to the Anki app on your computer (AnkiConnect, <code>127.0.0.1:8765</code>)</td></tr>
       <tr><td>Names of your Anki decks and note types</td><td>Offer the deck selector</td><td>Read from the local Anki app, not stored</td></tr>
-      <tr><td>Settings: chosen deck and “swap” per language pair, last chosen deck, panel collapsed state, last read version, privacy notice confirmed</td><td>Remember your choices</td><td>Browser local storage (<code>chrome.storage.local</code>)</td></tr>
+      <tr><td>Settings: chosen deck and “swap” per language pair, last chosen deck, panel collapsed state, last read version, privacy notice confirmed</td><td>Remember your choices</td><td>Chrome settings storage (<code>chrome.storage.sync</code>). If Chrome sync is on, Chrome transfers these settings to your other devices via your Google account. They are only deck names and toggles – no translated text.</td></tr>
     </table>
     <p>The extension reads the source text and translation continuously while you use Google Translate so the preview stays current. It does not store translated text anywhere except in Anki when you save a card.</p>
 
     <h2>What does not happen</h2>
     <ul>
-      <li>No transfer to the developer’s servers or to third parties.</li>
+      <li>No transfer to the developer’s servers or to third parties (apart from Google’s Chrome sync of the settings described above, if you use it).</li>
       <li>No requests of its own to Google Translate or other translation services.</li>
       <li>No access to websites other than Google Translate.</li>
       <li>No analytics, tracking, advertising, or sale of data.</li>
@@ -101,7 +101,7 @@
     <ul>
       <li><strong>translate.google.com / translate.google.de:</strong> to show the panel and read the text and translation.</li>
       <li><strong><code>http://127.0.0.1:8765</code>:</strong> to talk to the Anki app on your computer.</li>
-      <li><strong>storage:</strong> to save your settings.</li>
+      <li><strong>storage:</strong> to save and sync your settings.</li>
     </ul>
 
     <h2>About Google Translate and Anki</h2>
